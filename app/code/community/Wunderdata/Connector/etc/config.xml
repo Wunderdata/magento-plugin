@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Wunderdata_Connector>
+            <version>1.0.0</version>
+        </Wunderdata_Connector>
+    </modules>
+    <global>
+        <models>
+            <wunderdata_connector>
+                <class>Wunderdata_Connector_Model</class>
+            </wunderdata_connector>
+        </models>
+
+        <blocks>
+            <wunderdata_connector>
+                <class>Wunderdata_Connector_Block</class>
+            </wunderdata_connector>
+        </blocks>
+
+        <helpers>
+            <wunderdata_connector>
+                <class>Wunderdata_Connector_Helper</class>
+            </wunderdata_connector>
+        </helpers>
+    </global>
+
+    <default>
+        <carriers>
+            <multistore_shipping>
+                <active>0</active>
+            </multistore_shipping>
+        </carriers>
+    </default>
+</config>

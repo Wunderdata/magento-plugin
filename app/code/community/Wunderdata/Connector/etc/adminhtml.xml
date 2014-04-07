@@ -1,0 +1,15 @@
+<config>
+    <menu>
+        <wunderdata translate="title" module="wunderdata_connector">
+            <title>Wunderdata</title>
+            <sort_order>30</sort_order>
+            <children>
+                <products translate="title" module="wunderdata_connector">
+                    <title>License</title>
+                    <action>adminhtml/catalog_product/</action>
+                    <sort_order>0</sort_order>
+                </products>
+            </children>
+        </wunderdata>
+    </menu>
+</config>
