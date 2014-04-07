@@ -33,4 +33,15 @@
             </multistore_shipping>
         </carriers>
     </default>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Wunderdata_Connector after="Mage_Adminhtml">Wunderdata_Connector</Wunderdata_Connector>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>

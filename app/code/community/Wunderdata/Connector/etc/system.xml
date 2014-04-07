@@ -1,14 +1,40 @@
 <?xml version="1.0"?>
 <config>
+    <tabs>
+        <wunderdata_connector_tab module="wunderdata_connector" translate="label">
+            <label>Wunderdata</label>
+            <sort_order>100</sort_order>
+        </wunderdata_connector_tab>
+    </tabs>
     <sections>
-        <wunderdata translate="label">
-            <label>An Example Section</label>
-            <tab>general</tab>
-            <frontend_type>text</frontend_type>
-            <sort_order>1000</sort_order>
+        <wunderdata_connector_section module="wunderdata_connector" translate="label">
+            <label>Connector</label>
+            <sort_order>200</sort_order>
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
-        </wunderdata>
+            <tab>wunderdata_connector_tab</tab>
+            <groups>
+                <wunderdata_connector_general translate="label">
+                    <label>General</label>
+                    <comment>Some Comment</comment>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <wunderdata_connector_apikey translate="label tooltip comment">
+                            <label>API Key</label>
+                            <comment>Your API Key</comment>
+                            <tooltip>API KEY</tooltip>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </wunderdata_connector_apikey>
+                    </fields>
+                </wunderdata_connector_general>
+            </groups>
+        </wunderdata_connector_section>
     </sections>
 </config>

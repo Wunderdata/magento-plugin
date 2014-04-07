@@ -4,12 +4,32 @@
             <title>Wunderdata</title>
             <sort_order>30</sort_order>
             <children>
-                <products translate="title" module="wunderdata_connector">
-                    <title>License</title>
-                    <action>adminhtml/catalog_product/</action>
+                <wunderdata_setup translate="title" module="wunderdata_connector">
+                    <title>Setup</title>
+                    <action>adminhtml/setup/index</action>
                     <sort_order>0</sort_order>
-                </products>
+                </wunderdata_setup>
             </children>
         </wunderdata>
     </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <wunderdata_connector_section translate="title" module="wunderdata_connector">
+                                        <title>Wunderdata</title>
+                                        <sort_order>100</sort_order>
+                                    </wunderdata_connector_section>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
 </config>
