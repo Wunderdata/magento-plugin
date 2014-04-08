@@ -1,0 +1,27 @@
+.wunderdata-wizard {
+
+}
+
+.wunderdata-wizard ul {
+
+}
+
+.wunderdata-wizard ul li {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.wunderdata-wizard p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wunderdata-wizard .error {
+    font-weight: bold;
+    color: red;
+}
+
+.wunderdata-wizard .success {
+    font-weight: bold;
+    color: green;
+}

@@ -3,11 +3,11 @@
     <tabs>
         <wunderdata_connector_tab module="wunderdata_connector" translate="label">
             <label>Wunderdata</label>
-            <sort_order>100</sort_order>
+            <sort_order>500</sort_order>
         </wunderdata_connector_tab>
     </tabs>
     <sections>
-        <wunderdata_connector_section module="wunderdata_connector" translate="label">
+        <wunderdata module="wunderdata_connector" translate="label">
             <label>Connector</label>
             <sort_order>200</sort_order>
             <show_in_default>1</show_in_default>
@@ -15,7 +15,7 @@
             <show_in_store>1</show_in_store>
             <tab>wunderdata_connector_tab</tab>
             <groups>
-                <wunderdata_connector_general translate="label">
+                <api translate="label">
                     <label>General</label>
                     <comment>Some Comment</comment>
                     <sort_order>10</sort_order>
@@ -23,7 +23,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <wunderdata_connector_apikey translate="label tooltip comment">
+                        <key translate="label tooltip comment">
                             <label>API Key</label>
                             <comment>Your API Key</comment>
                             <tooltip>API KEY</tooltip>
@@ -31,10 +31,10 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                             <frontend_type>text</frontend_type>
-                        </wunderdata_connector_apikey>
+                        </key>
                     </fields>
-                </wunderdata_connector_general>
+                </api>
             </groups>
-        </wunderdata_connector_section>
+        </wunderdata>
     </sections>
 </config>

@@ -35,13 +35,22 @@
     </default>
     <admin>
         <routers>
-            <adminhtml>
+            <wunderdata>
+                <use>admin</use>
                 <args>
-                    <modules>
-                        <Wunderdata_Connector after="Mage_Adminhtml">Wunderdata_Connector</Wunderdata_Connector>
-                    </modules>
+                    <module>Wunderdata_Connector</module>
+                    <frontName>wunderdata</frontName>
                 </args>
-            </adminhtml>
+            </wunderdata>
         </routers>
     </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <wunderdata>
+                    <file>wunderdata.xml</file>
+                </wunderdata>
+            </updates>
+        </layout>
+    </adminhtml>
 </config>

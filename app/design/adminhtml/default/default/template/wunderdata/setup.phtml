@@ -1,0 +1,17 @@
+<div class="content-header">
+    <table cellspacing="0" class="grid-header">
+        <tr>
+            <td><h3><?=$this->__('Wunderdata Connector Setup')?></h3></td>
+        </tr>
+    </table>
+</div>
+<div class="wunderdata-wizard">
+    <p>This wizard will help you to setup the connection between your online shop and Wunderdata. The process involves basically three steps:</p>
+    <ul>
+        <li>Configure the API key</li>
+        <li>Validate the Magento environment</li>
+        <li>Test communication between your Magento and Wunderdata</li>
+    </ul>
+
+    <p><button type="button" class="scalable" onclick="window.open('<?php echo Mage::helper("adminhtml")->getUrl("wunderdata/setup/api") ?>', '_self'); return false;"><span><span>Start Setup Now!</span></span></button></p>
+</div>

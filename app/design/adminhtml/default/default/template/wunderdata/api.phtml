@@ -1,0 +1,19 @@
+<div class="content-header">
+    <table cellspacing="0" class="grid-header">
+        <tr>
+            <td><h3><?=$this->__('Wunderdata API Setup')?></h3></td>
+        </tr>
+    </table>
+</div>
+<div class="wunderdata-wizard">
+    <p>In this step you configure a secret key which is basically a password used by your Magento to authenticate with Wunderdata. This secret key is called "API Key".</p>
+    <?php if ($this->getData('error') == 'empty apikey') : ?>
+        <p class="error">You have to enter an API key.</p>
+    <?php endif ?>
+
+    <form action="<?php echo Mage::helper("adminhtml")->getUrl("wunderdata/setup/api") ?>" method="post">
+        <input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+        <p><strong>Your API Key</strong><br/><input type="text" name="apikey" /></p>
+        <p><button type="submit" class="scalable"><span><span>Save API Key</span></span></button></p>
+    </form>
+</div>

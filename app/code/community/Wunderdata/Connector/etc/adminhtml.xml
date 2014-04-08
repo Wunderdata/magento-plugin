@@ -2,11 +2,11 @@
     <menu>
         <wunderdata translate="title" module="wunderdata_connector">
             <title>Wunderdata</title>
-            <sort_order>30</sort_order>
+            <sort_order>100</sort_order>
             <children>
                 <wunderdata_setup translate="title" module="wunderdata_connector">
                     <title>Setup</title>
-                    <action>adminhtml/setup/index</action>
+                    <action>wunderdata/setup/index</action>
                     <sort_order>0</sort_order>
                 </wunderdata_setup>
             </children>

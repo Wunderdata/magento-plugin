@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><name>wunderdata/css/style.css</name><params/></action>
+        </reference>
+    </default>
+    <wunderdata_setup_index>
+        <reference name="content">
+            <block type="adminhtml/template" name="wunderdata_setup" template="wunderdata/setup.phtml"/>
+        </reference>
+    </wunderdata_setup_index>
+    <wunderdata_setup_api>
+        <reference name="content">
+            <block type="adminhtml/template" name="wunderdata_setup_api" template="wunderdata/api.phtml"/>
+        </reference>
+    </wunderdata_setup_api>
+    <wunderdata_setup_env>
+        <reference name="content">
+            <block type="adminhtml/template" name="wunderdata_setup_env" template="wunderdata/env.phtml"/>
+        </reference>
+    </wunderdata_setup_env>
+</layout>
