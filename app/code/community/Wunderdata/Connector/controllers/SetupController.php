@@ -4,10 +4,23 @@ class Wunderdata_Connector_SetupController extends Mage_Adminhtml_Controller_Act
 {
     public function indexAction()
     {
-        $model = Mage::getModel('wunderdata_connector/setup');
-        $report = $model->checkEnvironment();
-        $this->loadLayout();
-        $this->renderLayout();
+        // firewall test
+        $httpClient = new Zend_Http_Client('https://etl.wunderdata.com/ping', array(
+            'timeout' => 6
+        ));
+        $reponse = $httpClient->request(Zend_Http_Client::GET);
+        if ($reponse->isSuccessful() && $reponse->getBody() == 'pong') {
+            // redirect to api key
+        }
+
+        // try to access google
+        $httpClient->setUri('https://www.google.de');
+        $response = $httpClient->request(Zend_Http_Client::GET);
+        if ($reponse->isSuccessful() || $reponse->isRedirect()) {
+            // problem on our side. retry button or contact us
+        } else {
+            // firewall/vpn problem
+        }
     }
 
     public function apiAction()
